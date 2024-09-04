@@ -1,0 +1,145 @@
+nav {
+    padding-inline: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 16px;
+}
+
+nav img {
+    width: 5rem;
+}
+
+nav a {
+    color: white;
+    background-color: #FF6666;
+    padding: 4px 16px;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.hero-section {
+    padding-inline: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 32px;
+    background-color: #ff666618;
+}
+
+.hero-section img, .text-section img {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.text-section {
+    margin-top: 32px;
+    padding-inline: 64px;
+    padding-block: 32px;
+}
+
+.text-section h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.text-section div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-section div p {
+    color: #00000090;
+    width: 50%;
+}
+
+.text-section div ul {
+    margin-left: 2rem;
+}
+
+footer {
+    margin-top: 32px;
+    padding-inline: 64px;
+    padding-block: 32px;
+    background-color: #ff666618;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    width: 50%;
+}
+
+footer p {
+    color: #00000090;
+}
+
+footer a {
+    color: #00000090;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    transform: translateY(5px);
+}
+
+/* -------------------------- media queries ------------------------- */
+
+@media only screen and (min-width : 1024px) and (max-width : 1200px) {
+    .text-section div p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 1024px) {
+    .text-section div p, footer p {
+        font-size: 10px;
+    }
+
+    .hero-section {
+        padding-block: 64px;
+    }
+
+    .text-section img, .hero-section img {
+        width: 15rem;
+        height: 25rem;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .hero-section {
+        flex-direction: column;
+        row-gap: 16px;
+        padding-block: 32px;
+    }
+    .hero-section img, .text-section img {
+        height: 20rem;
+    }
+
+    .text-section h1 {
+        margin-bottom: 16px;
+    }
+
+    .text-section div {
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+    }
+
+    .text-section div p {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 16px;
+    }
+
+    footer div {
+        width: 100%;
+    }
+}
