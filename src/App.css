@@ -91,21 +91,14 @@ nav a:hover {
     padding-inline:128px;
     height: 80vh;
     margin-top: 32px;
-    /* margin-bottom: 64px; */
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .contact-section h1 {
     color: #FF6666;
     font-size: 64px;
     margin-bottom: 32px;
-    /* text-align: right; */
-    position: relative;
-    /* border: 1px solid red; */
-    /* right: 15rem; */
 }
 
 .contact-section .about-olly {
@@ -114,11 +107,7 @@ nav a:hover {
 }
 
 .contact-section p {
-    /* position: relative; */
-    /* left: 40rem; */
     color: #00000090;
-    /* border: 1px solid red; */
-    /* width: fit-content; */
 }
 
 .contact-section a {
@@ -127,21 +116,12 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* .contact-section div {
-    border: 1px solid red;
-} */
-
 .contact-section img {
     width: 20rem;
-    /* height: 30rem; */
     height: 100%;
-    /* position: relative; */
-    /* top: -10rem; */
-    /* border: 1px solid red; */
 }
 
 .contact-section div {
-    /* border: 1px solid red; */
     width: 50%;
 }
 
@@ -218,7 +198,6 @@ nav a:hover {
 
     .contact-section {
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         padding-inline: 64px;
         row-gap: 32px;

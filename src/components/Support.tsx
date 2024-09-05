@@ -27,24 +27,6 @@ const Support = () => {
           </p>
         </div>
       </section>
-
-      {/* <footer>
-        <div>
-          <h3>Contact Us</h3>
-          <p>
-            E-Mail : <a href="mailto:ns@ollytheapp.com">ns@ollytheapp.com</a>
-          </p>
-        </div>
-        <div>
-          <h3>The Olly</h3>
-          <p>
-            Olly makes exercise a social and enjoyable experience for kids,
-            promoting healthy habits while they connect with friends in a fun,
-            interactive environment. Download Olly today and start building a
-            fitness routine that’s as engaging as it is effective!
-          </p>
-        </div>
-      </footer> */}
     </div>
   );
 };
