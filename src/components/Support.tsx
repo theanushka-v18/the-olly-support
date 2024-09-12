@@ -1,4 +1,4 @@
-import theOllyLogo from "../assets/Color logo - no background 1.png";
+import theOllyLogo from "../assets/logo.png";
 import contactImg from "../assets/Group 1410084205.png";
 
 const Support = () => {

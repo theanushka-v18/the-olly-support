@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import theOllyLogo from "../assets/Color logo - no background 1.png";
+import theOllyLogo from "../assets/logo.png";
 import appScreenshot1 from "../assets/file (2).png";
 import appScreenshot2 from "../assets/file (3).png";
 import appScreenshot3 from "../assets/file (4).png";
