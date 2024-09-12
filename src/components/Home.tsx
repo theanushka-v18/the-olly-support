@@ -16,7 +16,7 @@ const Home = () => {
 
       <section className="hero-section">
         <img src={appScreenshot1} alt="app-screenshot1" />
-        <img src={appScreenshot2} alt="app-screenshot2" />
+        <img src={appScreenshot2} alt="app-screenshot2" className="appScreenshot2"/>
       </section>
 
       <section className="text-section">

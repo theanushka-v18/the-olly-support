@@ -3,16 +3,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-block: 16px;
+    padding-block: 8px;
+    background-color: #FF6666;
 }
 
 nav img {
-    width: 5rem;
+    width: 4rem;
 }
 
 nav a {
-    color: white;
-    background-color: #FF6666;
+    color: #000;
+    background-color: #fff;
     padding: 4px 16px;
     border-radius: 5px;
     transition: transform 0.2s ease;
@@ -24,15 +25,13 @@ nav a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-block: 32px;
-    background-color: #ff666618;
+    padding-block: 16px;
 }
 
 .hero-section img, .text-section img {
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 35rem;
     border-radius: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .text-section {
@@ -55,6 +54,7 @@ nav a {
 .text-section div p {
     color: #00000090;
     width: 50%;
+    padding-top: 2rem;
 }
 
 .text-section div ul {
@@ -129,7 +129,7 @@ nav a:hover {
 
 @media only screen and (min-width : 1024px) and (max-width : 1200px) {
     .text-section div p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -160,6 +160,9 @@ nav a:hover {
     .contact-section {
         padding-inline: 32px;
     }
+    .text-section {
+        padding-inline: 32px;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -169,7 +172,7 @@ nav a:hover {
         padding-block: 32px;
     }
     .hero-section img, .text-section img {
-        height: 20rem;
+        height: 25rem;
     }
 
     .text-section h1 {
