@@ -41,7 +41,7 @@ const Home = () => {
       </section>
 
       <section className="text-section">
-        <h1>The Olly</h1>
+        <h1>Olly</h1>
           <div>
           <p>
             Olly is an exciting new app designed to make our children physically
