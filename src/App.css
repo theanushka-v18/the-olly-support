@@ -1,3 +1,7 @@
+:root {
+    --text-color : '#473F3F'
+}
+
 nav {
     padding-inline: 64px;
     display: flex;
@@ -67,7 +71,7 @@ nav .app-download-logos {
 }
 
 .text-section div p {
-    color: #00000090;
+    color: var(--text-color);
     width: 50%;
     height: 47rem;
     padding-top: 2rem;
@@ -96,11 +100,11 @@ footer div {
 }
 
 footer p {
-    color: #00000090;
+    color: var(--text-color);
 }
 
 footer a {
-    color: #00000090;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -109,7 +113,7 @@ footer span {
 }
 
 .copyright {
-    color: #00000090;
+    color: var(--text-color);
     text-align: right;
 }
 
@@ -137,11 +141,11 @@ nav a:hover {
 }
 
 .contact-section p {
-    color: #00000090;
+    color: var(--text-color);
 }
 
 .contact-section a {
-    color: #00000090;
+    color: var(--text-color);
     text-decoration: underline;
     font-weight: bold;
 }
