@@ -27,6 +27,10 @@ nav div {
     gap: 16px;
 }
 
+nav .app-download-logos {
+    display: none;
+}
+
 .hero-section {
     padding-inline: 64px;
     display: flex;
@@ -35,7 +39,11 @@ nav div {
     padding-block: 16px;
 }
 
-.hero-section img, .text-section img {
+.text-section img {
+    height: 47rem;
+}
+
+.hero-section img {
     width: 18rem;
     height: 35rem;
     border-radius: 20px;
@@ -61,18 +69,10 @@ nav div {
 .text-section div p {
     color: #00000090;
     width: 50%;
-    height: 34rem;
+    height: 47rem;
     padding-top: 2rem;
     font-size: 12.5px;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    box-shadow: inset 0px -6px 4px -2px rgba(0, 0, 0, 0.1);
-    padding: 8px;
 }
-
-::-webkit-scrollbar {
-    display: none;
-  }
 
 .text-section div ul {
     margin-left: 2rem;
@@ -167,11 +167,17 @@ nav a:hover {
 @media only screen and (min-width : 1024px) and (max-width : 1200px) {
     .text-section div p {
         font-size: 14px;
+        height: 75rem;
+    }
+
+    .text-section img {
+        width: 35%;
+        height: 75rem;
     }
 }
 
 @media only screen and (max-width : 1024px) {
-    .text-section div p, footer p {
+    footer p {
         font-size: 10px;
     }
 
@@ -179,9 +185,19 @@ nav a:hover {
         padding-block: 64px;
     }
 
-    .text-section img, .hero-section img {
+    .hero-section img {
         width: 15rem;
         height: 25rem;
+    }
+
+    .text-section div p {
+        font-size: 10px;
+        height: 50rem;
+    }
+
+    .text-section img {
+        width: 35%;
+        height: 50rem;
     }
 
     .contact-section {
@@ -200,6 +216,25 @@ nav a:hover {
     .text-section {
         padding-inline: 32px;
     }
+
+    .text-section div {
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+    }
+
+    .text-section div p {
+        width: 100%;
+        height: fit-content;
+    }
+    .text-section h1 {
+        margin-bottom: 16px;
+    }
+
+    .text-section img {
+        width: 50%;
+        height: 40rem;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -212,22 +247,12 @@ nav a:hover {
         height: 25rem;
     }
 
-    .text-section h1 {
-        margin-bottom: 16px;
-    }
-
-    .text-section div {
-        flex-direction: column;
-        row-gap: 16px;
-        align-items: center;
-    }
-
-    .text-section div p {
-        width: 100%;
+    .copyright {
+        text-align: center;
     }
 
     footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         row-gap: 16px;
     }
@@ -249,5 +274,16 @@ nav a:hover {
 
     .contact-section div {
         width: 100%;
+    }
+    nav .app-download-logos {
+        display: block;
+    }
+    nav .app-download-logos img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 16px;
+    }
+    nav .app-download-buttons {
+        display: none;
     }
 }

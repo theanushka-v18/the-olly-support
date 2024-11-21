@@ -2,20 +2,31 @@ import theOllyLogo from "../assets/logo.png";
 import appScreenshot1 from "../assets/file (2).png";
 import appScreenshot2 from "../assets/file (3).png";
 import appScreenshot3 from "../assets/file (4).png";
-import playstore from "../assets/playstore-button-logo.png";
-import appstore from "../assets/appstore-button-logo.png";
+import playstoreButton from "../assets/playstore-button-logo.png";
+import appstoreButton from "../assets/appstore-button-logo.png";
+import playstoreLogo from "../assets/playstore-logo.png";
+import appstoreLogo from "../assets/appstore-logo.png";
 
 const Home = () => {
   return (
     <div className="container">
       <nav>
         <img src={theOllyLogo} alt="the-olly-logo" />
-        <div>
+        <div className="app-download-buttons">
         <a href="https://play.google.com/store/apps/details?id=com.reytara.olly" target="_blank">
-          <img src={playstore} alt="playstore button" />
+          <img src={playstoreButton} alt="playstore button" />
         </a>
         <a href="https://apps.apple.com/in/app/olly/id6480505963" target="_blank">
-          <img src={appstore} alt="appstore button" />
+          <img src={appstoreButton} alt="appstore button" />
+        </a>
+        </div>
+
+        <div className="app-download-logos">
+        <a href="https://play.google.com/store/apps/details?id=com.reytara.olly" target="_blank">
+          <img src={playstoreLogo} alt="playstore logo" />
+        </a>
+        <a href="https://apps.apple.com/in/app/olly/id6480505963" target="_blank">
+          <img src={appstoreLogo} alt="appstore logo" />
         </a>
         </div>
       </nav>
@@ -32,7 +43,7 @@ const Home = () => {
       <section className="text-section">
         <h1>The Olly</h1>
           <div>
-          <p className="scrollable-container">
+          <p>
             Olly is an exciting new app designed to make our children physically
             active. Designed by a parent who wants his kids to get healthier,
             Olly curates and offers easy, daily-changing workouts for children
@@ -92,9 +103,9 @@ const Home = () => {
             Olly makes exercise a social and enjoyable experience for kids, promoting healthy habits while they connect with friends in a fun, interactive environment. 
             Download Olly today and start building a fitness routine that’s as engaging as it is effective! 
           </p>
-          <div>
+          {/* <div> */}
           <img src={appScreenshot3} alt="app-screenshot3" />
-          </div>
+          {/* </div> */}
         </div>
       </section>
 
